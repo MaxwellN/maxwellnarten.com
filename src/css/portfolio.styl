@@ -1,0 +1,369 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ^ Reset ^ */
+
+
+$navy = #021421
+$offwhite = #f2f2f2
+/* ^ Colors ^ */
+
+
+$lg = "(min-width: 1100px) and (max-width: 1300px)"
+$md = "(min-width: 768px) and (max-width: 1099px)"
+$sm = "(max-width: 767px)"
+/* ^ Media Quries ^ */
+$large-width = 325rem
+
+
+p, a, h2
+	font-size: 5rem
+p
+	font-weight: 300
+	line-height: 6rem
+a, h1, h2, h3, h4, h5, h6, li
+	font-weight: 600
+/* ^ Font Sizes/Weights ^ */
+
+
+p, h1, h2, h3, h4, h5, h6, li, a
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+a
+	cursor: pointer
+	color: $offwhite
+	text-decoration: none
+
+
+html
+	box-sizing: border-box
+	font-size: 4px
+	font-family: 'Montserrat'
+	color: $navy
+*, *:before, *:after
+	box-sizing: inherit
+body
+	background: $offwhite
+	width: 100%
+
+
+.container
+	display: grid
+	grid-template-areas:"header""content""footer"
+	grid-template-rows: 30rem 1fr 31.5rem
+	height: 100vh
+	width: 100%
+
+	& .header
+		background: $navy
+		grid-area: header
+		& .grid-container
+			align-items: center
+			display: grid
+			grid-template-areas:"top-logo . top-links"
+			grid-template-columns: repeat(3, 1fr)
+			max-width: $large-width
+			margin: 0 auto
+			@media (max-width:1350px)
+				padding: 0 7rem
+			@media (min-width: 0px) and (max-width: 1099px)
+				padding-left: 5rem
+				padding-right: 5rem
+			& > a
+				grid-area: top-logo
+				height: 30rem
+				width: 35rem
+				& .logo
+					fill: $offwhite
+					height: 30rem
+					width: 35rem
+		& nav
+			grid-area: top-links
+			// Hamburger Button---Mobile-------------------------
+			& .hamburger
+				background: none
+				border: none
+				display: none
+				position: relative
+				&:focus
+					outline: none
+			@media (max-width: 800px)
+				display: flex
+				justify-content: flex-end
+				width: 100%
+				& .hamburger
+					display: flex
+					cursor: pointer
+					flex-direction: column
+					&__arm
+						background: $offwhite
+						height: 1.2rem
+						width: 9rem
+						&:nth-child(2)
+							margin: 1.5rem 0
+						& ~ .header__links
+							& inactive
+								display: none
+							&--active
+								align-items: flex-end
+								background: $navy
+								display: flex
+								flex-direction: column
+								padding: 3rem 7rem 4rem
+								position: absolute
+								right: 0
+								top: 20rem
+								& li
+									padding-top: 4rem
+									&:first-child
+										padding-top: 0
+								& li:first-child
+									& .work
+										&__list
+											display: none
+											position: inherit
+											visibility: hidden
+											width: auto
+		// The Links ---------------------------
+		&__links
+			display: grid
+			grid-column-gap: 2rem
+			grid-template-columns: repeat(3, 1fr)
+			text-align: center
+			position: relative
+			& li:first-child
+				& .work
+					color: $offwhite
+					cursor: pointer
+					font-size: 5rem
+					opacity: .75
+					text-decoration: none
+					& .triangle
+						fill: white
+						transform: translate(2px, -3px)
+						width: 3rem
+					&__list
+						align-items: center
+						background: $navy
+						display: flex
+						opacity: 0
+						cursor: none
+						flex-direction: column
+						left: 0
+						padding: 3rem 7rem 4rem
+						position: absolute
+						text-align: left
+						transition: all .3s ease-in-out
+						visibility: hidden
+						width: 240px
+						& li
+							padding-top: 2rem
+							&:first-child
+								padding-top: 0
+					&:hover
+						opacity: 1
+						& .work__list
+							align-items: center
+							background: $navy
+							display: flex
+							cursor: pointer
+							flex-direction: column
+							left: 0
+							opacity: 1
+							padding: 3rem 7rem 4rem
+							position: absolute
+							text-align: left
+							visibility: visible
+							width: 240px
+							& li
+								padding-top: 2rem
+								&:first-child
+									padding-top: 0
+			& a
+				border-bottom: 1px solid transparent
+				color: $offwhite
+				opacity: .75
+				text-decoration: none
+				transition: all .2s ease-in-out
+				&:hover
+					border-bottom-color: $offwhite
+					opacity: 1
+			@media (max-width: 800px)
+				display:none
+
+	& .content
+		grid-area: content
+		& .grid-container
+			display: grid
+			max-width: $large-width
+			margin: 0 auto
+			padding-bottom: 22rem
+			padding-top: 14rem
+			@media (max-width:1350px)
+				padding-left: 7rem
+				padding-right: 7rem
+			@media (min-width: 0px) and (max-width: 1099px)
+				padding-left: 0
+				padding-right: 0
+			& .randstad-logo
+				height: 12rem
+				@media (min-width: 0px) and (max-width: 1099px)
+					padding-left: 5rem
+					padding-right: 5rem
+			& .project
+				display: grid
+				grid-column-gap: 5rem
+				grid-template-columns: 2fr 3fr
+				grid-template-areas: "project-title project-title""project-img project-desc"
+				padding: 20rem 0 0
+				@media $md
+					grid-template-areas: "project-title""project-img""project-desc"
+					grid-template-columns: 1fr
+				@media $sm
+					grid-template-areas: "project-title""project-img""project-desc"
+					grid-template-columns: 1fr
+				&:first-of-type
+					padding: 14rem 0 0
+				&__title
+					border-bottom: 2px solid
+					border-image: linear-gradient(to right, $navy, $offwhite) 1 50
+					grid-area: project-title
+					margin-bottom: 7rem
+					padding-bottom: 1rem
+					@media (min-width: 0px) and (max-width: 1099px)
+						margin: 0 5rem 7rem
+						padding-left: 0
+						padding-right: 0
+				&__img
+					grid-area: project-img
+					max-width: 100%
+					height: fit-content
+					position: relative
+					&--actions
+						background: white
+						display: flex
+						height: 100%
+						opacity: 0.15
+						position: absolute
+						width: 100%
+						z-index: 5
+						& > div
+							display: flex
+							justify-content: center
+							align-items: center
+							& > svg
+								height: 15%
+						&-prev
+							height: 100%
+							width: 20%
+							&-svg
+								transform: rotate(180deg)
+						&-zoom
+							height: 100%
+							width: 60%
+						&-next
+							height: 100%
+							width: 20%
+					& img
+						@media (min-width:1100px)
+							border: 1px solid $navy
+							display: grid
+							grid-template-columns: 1fr 2fr 1fr
+							max-width: 100%
+						@media $md
+							max-width: unset
+							margin-bottom: 7rem
+							width: 100%
+						@media $sm
+							max-width: unset
+							margin-bottom: 7rem
+							width: 100%
+				&__desc
+					grid-area: project-desc
+					@media (min-width: 0px) and (max-width: 1099px)
+						padding-left: 5rem
+						padding-right: 5rem
+
+	& .footer
+		background: $navy
+		grid-area: footer
+		& .grid-container
+			align-items: center
+			display: grid
+			grid-template-areas:"bottom-monogram . bottom-links"
+			grid-template-columns: repeat(3, 1fr)
+			max-width: $large-width
+			margin: 0 auto
+			@media (max-width:1350px)
+				padding: 0 7rem
+			@media (min-width: 0px) and (max-width: 1099px)
+				padding-left: 5rem
+				padding-right: 5rem
+			& > a
+				grid-area: bottom-monogram
+				height: 30rem
+				width: 18rem
+				& .monogram
+					fill: $offwhite
+					height: 30rem
+					width: 18rem
+		&__links
+			display: grid
+			grid-area: bottom-links
+			grid-column-gap: 2rem
+			grid-template-columns: repeat(3, 1fr)
+			text-align: center
+			& li
+				&:first-child
+					grid-column: 2 / 3
+				&:last-child
+					grid-column: 3 / 4
+			& a
+				border-bottom: 1px solid transparent
+				color: $offwhite
+				opacity: .75
+				text-decoration: none
+				transition: all .2s ease-in-out
+				&:hover
+					border-bottom-color: $offwhite
+					opacity: 1

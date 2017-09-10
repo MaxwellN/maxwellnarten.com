@@ -1,0 +1,16 @@
+// var script = document.createElement("script");
+//   script.setAttribute("src", "//code.jquery.com/jquery-latest.min.js");
+//   script.addEventListener('load', function() {
+//     var script = document.createElement("script");
+//     document.body.appendChild(script);
+//   }, false);
+//   document.body.appendChild(script);
+
+
+  $(document).ready(function() {
+      var $window = $(window);
+      var hamburger = $('.hamburger');
+	  var header__links = $('.header__links');
+
+	  console.log($window.width());
+  });
