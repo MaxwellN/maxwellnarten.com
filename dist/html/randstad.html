@@ -5,8 +5,9 @@
 	<meta charset="utf8" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 	<link href="../css/portfolio.css" rel="stylesheet" />
+	<script src="../js/img-slider.js"></script>
 </head>
 	<body>
 	<div class="container">
@@ -65,17 +66,17 @@
 					<h2 class="project__title">Rebranding and website update.</h2>
 					<div class="project__img">
 						<div class="project__img--actions">
-							<div class="project__img--actions-prev">
+							<div class="project__img--actions-prev" onclick="imgPrev()">
 								<svg class="project__img--actions-prev-svg" xmlns="http://www.w3.org/2000/svg">
 									<use href="../images/svg/svg.svg#arrow"></use>
 								</svg>
 							</div>
-							<div class="project__img--actions-zoom">
+							<div class="project__img--actions-zoom" onclick="imgZoom()">
 								<svg class="project__img--actions-zoom-svg" xmlns="http://www.w3.org/2000/svg">
 									<use href="../images/svg/svg.svg#zoom"></use>
 								</svg>
 							</div>
-							<div class="project__img--actions-next">
+							<div class="project__img--actions-next" onclick="imgNext()">
 								<svg class="project__img--actions-next-svg" xmlns="http://www.w3.org/2000/svg">
 									<use href="../images/svg/svg.svg#arrow"></use>
 								</svg>
@@ -86,13 +87,51 @@
 					<p class="project__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</section>
 				<section class="project">
-					<h2 class="project__title">Rebranding and website update.</h2>
-					<img class="project__img" id="randstad_branch">
+					<h2 class="project__title">A/B Testing.</h2>
+					<div class="project__img">
+						<div class="project__img--actions">
+							<div class="project__img--actions-prev" onclick="imgPrev()">
+								<svg class="project__img--actions-prev-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-zoom" onclick="imgZoom()">
+								<svg class="project__img--actions-zoom-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#zoom"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-next" onclick="imgNext()">
+								<svg class="project__img--actions-next-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+						<img id="randstad_ab_test">
+					</div>
 					<p class="project__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</section>
 				<section class="project">
-					<h2 class="project__title">Rebranding and website update.</h2>
-					<img class="project__img" src="../images/test.jpg" alt="">
+					<h2 class="project__title">Branch pages.</h2>
+					<div class="project__img">
+						<div class="project__img--actions">
+							<div class="project__img--actions-prev" onclick="imgPrev()">
+								<svg class="project__img--actions-prev-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-zoom" onclick="imgZoom()">
+								<svg class="project__img--actions-zoom-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#zoom"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-next" onclick="imgNext()">
+								<svg class="project__img--actions-next-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+						<img id="randstad_branch">
+					</div>
 					<p class="project__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</section>
 			</div>
@@ -116,8 +155,7 @@
 	</div>
 
 
-		<script src="../js/script.js"></script>
 		<script src="../js/portfolio-images.js"></script>
-		<!-- <script src="../js/image-script.js"></script> -->
+		<script src="../js/script.js"></script>
 	</body>
 </html>
