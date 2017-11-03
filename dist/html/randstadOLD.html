@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-60875210-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-60875210-1');
+	</script>
+	<title>Maxwell Narten</title>
+	<meta charset="utf8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+	<link href="../css/portfolio.css" rel="stylesheet" />
+</head>
+	<body>
+	<div class="container">
+		<div class="overlay">
+			<div class="overlay__img">
+				<div class="overlay__img-prev" onclick="imgPrevZoom(this)">
+					<svg class="overlay__img-prev-svg" xmlns="http://www.w3.org/2000/svg">
+						<use href="../images/svg/svg.svg#arrow"></use>
+					</svg>
+				</div>
+				<section class="overlay__img__container">
+					<img id="imgCloseup">
+					<div class="overlay__img__container-close" onclick="closeOverlay();">
+						<svg class="overlay__img-close-svg" xmlns="http://www.w3.org/2000/svg">
+							<use href="../images/svg/svg.svg#close"></use>
+						</svg>
+					</div>
+				</section>
+				<div class="overlay__img-next" onclick="imgNextZoom(this);">
+					<svg class="overlay__img-next-svg" xmlns="http://www.w3.org/2000/svg">
+						<use href="../images/svg/svg.svg#arrow"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<!-- Header -->
+
+		<header class="header">
+			<div class="grid-container">
+				<a href="../index.html">
+					<svg class="logo" xmlns="http://www.w3.org/2000/svg">
+						<use href="../images/svg/svg.svg#logo"></use>
+					</svg>
+				</a>
+				<nav>
+
+
+					<!-- Links -->
+
+					<ul class="header__links">
+						<li>
+							<span class="work">Work
+								<span>
+									<svg class="triangle" viewbox="0 0 10 5">
+										<polygon points="10,0 5,5 0,0"/>
+									</svg>
+								</span>
+								<ul class="work__list">
+									<li><a href="randstad.html">Randstad</a></li>
+									<li><a href="genassem.html">General Assembly</a></li>
+									<li><a href="hln.html">HLN</a></li>
+									<li><a href="clickmore.html">ClickMore Media</a></li>
+								</ul>
+							</span>
+						</li>
+						<li><a href="mailto:maxwellnarten@gmail.com">Email</a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/maxwell-narten-4b47bb30">LinkedIn</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Main Content -->
+
+		<main class="content">
+			<div class="grid-container">
+				<svg class="randstad-logo"xmlns="http://www.w3.org/2000/svg">
+					<use href="../images/svg/svg.svg#randstad"></use>
+				</svg>
+				<section class="project">
+					<h2 class="project__title">Rebranding and website update.</h2>
+					<div class="project__img">
+						<div class="project__img--actions randstad_rebrand_parent">
+							<div class="project__img--actions-prev" onclick="imgPrev(this)">
+								<svg class="project__img--actions-prev-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-zoom">
+								<svg class="project__img--actions-zoom-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#zoom"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-next" onclick="imgNext(this);">
+								<svg class="project__img--actions-next-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+						<img class="randstad_rebrand">
+					</div>
+					<p class="project__desc">Working on an abbreviated timeline of 5 months, in tandem with Huge Inc. creating and delivering design collateral, I assisted in updating the Randstad USA website for its relaunch in May 2017. For this project I conducted in-person user testing to analyze where potential pain points were going to be prior to launch, with simple fixes addressed at the time and more complex problems logged for later assessment. Working in conjunction with development, I helped ensure design standards were adhered to the launch day deadline was met with full updates the homepage, job search and job details pages, and partial rebanding updates of colors and fonts were added to the remainder of the site while they awaited full rebranding treatment in the future.</p>
+				</section>
+				<section class="project">
+					<h2 class="project__title">A/B Testing.</h2>
+					<div class="project__img">
+						<div class="project__img--actions randstad_abtest_parent">
+							<div class="project__img--actions-prev" onclick="imgPrev(this)">
+								<svg class="project__img--actions-prev-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-zoom" onclick="imgZoom(this)">
+								<svg class="project__img--actions-zoom-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#zoom"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-next" onclick="imgNext(this)">
+								<svg class="project__img--actions-next-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+						<img class="randstad_abtest">
+					</div>
+					<p class="project__desc">Using what I learned from user testing and data obtained from Google analytics, the first area to address post launch was the job details pages, specifically the job apply buttons. Analytics showed that post website rebrand launch, apply rates were down along with user engagement of the apply button. Prior to relaunch, we provided separate buttons for each method of applying (through Randstad or with third party sites such as LinkedIn and Indeed). I theorized this was likely due to ambiguity of function of the new apply button. Although it had a drop down arrow to indicate multiple apply options, users were hesitant to click. Using Optimizely.com, I coded and conducted an A/B (multivariate in this case) test to determine if we could improve user engagement by modifying the button. I decided to test a few versions with the logos of the third party sites in place of the drop down arrow,  one version with the words on the button changed to ‘easy apply’, a version with reduced vertical ‘white space’ so the user would not have to scroll as far down the page, and a version with a sticky, omnipresent apply button for mobile screens that would appear on the bottom once the user scrolled into the job description. To my surprise, the versions with third party logos on the button performed worse than the original. The remaining tests each saw a 12-13% improvement and were approved for full implementation.</p>
+				</section>
+				<section class="project">
+					<h2 class="project__title">Branch pages.</h2>
+					<div class="project__img">
+						<div class="project__img--actions randstad_branch_parent">
+							<div class="project__img--actions-prev" onclick="imgPrev(this)">
+								<svg class="project__img--actions-prev-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-zoom" onclick="imgZoom(this)">
+								<svg class="project__img--actions-zoom-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#zoom"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-next" onclick="imgNext(this)">
+								<svg class="project__img--actions-next-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+						<img class="randstad_branch">
+					</div>
+					<p class="project__desc">Randstad branch pages correspond to the physical locations where talent can interview with recruiters prior to being sent on assignments. These pages also display the jobs that are being offered by that branch and can be used to locate work that is near that area. Most of the traffic driven to these pages is from search engines, so SEO was prioritized when updating their design. The key points for SEO for each page to display the branch’s hours, address, phone number, driving directions, and the type of work the branch specialized in. A search and filter option is was also incorporated.</p>
+				</section>
+				<section class="project">
+					<h2 class="project__title">User settings panel.</h2>
+					<div class="project__img">
+						<div class="project__img--actions randstad_settings_parent">
+							<div class="project__img--actions-prev" onclick="imgPrev(this)">
+								<svg class="project__img--actions-prev-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-zoom" onclick="imgZoom(this)">
+								<svg class="project__img--actions-zoom-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#zoom"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-next" onclick="imgNext(this)">
+								<svg class="project__img--actions-next-svg" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+						<img class="randstad_settings">
+					</div>
+					<p class="project__desc">Where users land upon signing in, the settings panel houses all the information saved by the users for future job applies, as well as jobs they previously applied to, favorited, and recommended jobs based on their previous applies. The email notification section provides users with a control panel to edit, add and delete jobs alerts and other periodic communications. After approval of the design and before development began, I spent some of my free time mocking up the design in Codepen to hand off to the developer.</p>
+				</section>
+			</div>
+		</main>
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="grid-container">
+				<a href="../index.html">
+					<svg class="monogram" xmlns="http://www.w3.org/2000/svg">
+						<use href="../images/svg/svg.svg#monogram"></use>
+					</svg>
+				</a>
+				<ul class="footer__links">
+					<li><a href="mailto:maxwellnarten@gmail.com">Email</a></li>
+					<li><a target="_blank" href="https://www.linkedin.com/in/maxwell-narten-4b47bb30">LinkedIn</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+
+		<script src="../js/portfolio-images.js"></script>
+		<script src="../js/randstad.js"></script>
+	</body>
+</html>

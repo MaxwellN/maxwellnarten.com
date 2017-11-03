@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-60875210-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-60875210-1');
+	</script>
+	<title>Maxwell Narten</title>
+	<meta charset="utf8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+	<link href="../css/portfolio.css" rel="stylesheet" />
+</head>
+	<body>
+	<div class="container">
+		<div class="overlay">
+			<div class="overlay__img">
+				<div class="overlay__img-prev" style="cursor: default" onclick="imgPrevZoom(this)">
+					<svg class="overlay__img-prev-svg" style="display: none" xmlns="http://www.w3.org/2000/svg">
+						<use href="../images/svg/svg.svg#arrow"></use>
+					</svg>
+				</div>
+				<section class="overlay__img__container">
+					<img id="imgCloseup">
+					<div class="overlay__img__container-close" onclick="closeOverlay();">
+						<svg class="overlay__img-close-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 70 70" style="enable-background:new 0 0 23.4 19;" xml:space="preserve">
+							 <g>
+							 	<circle class="st0" style="fill:#fff;" cx="35" cy="35" r="35"/>
+							 	<path class="st1" style="fill:#021421;" d="M53.4,14.8c-0.6-0.6-1.3-0.9-2.2-0.9c-0.8,0-1.6,0.3-2.2,0.9L35,28.9L20.9,14.8c-0.6-0.6-1.3-0.9-2.2-0.9
+							 		c-0.8,0-1.6,0.3-2.2,0.9l-1.8,1.8c-0.6,0.6-0.9,1.3-0.9,2.2c0,0.8,0.3,1.6,0.9,2.2L28.9,35L14.8,49.1c-0.6,0.6-0.9,1.3-0.9,2.2
+							 		c0,0.8,0.3,1.6,0.9,2.2l1.8,1.8c0.6,0.6,1.3,0.9,2.2,0.9c0.8,0,1.6-0.3,2.2-0.9L35,41.1l14.1,14.1c0.6,0.6,1.3,0.9,2.2,0.9
+							 		c0.8,0,1.6-0.3,2.2-0.9l1.8-1.8c0.6-0.6,0.9-1.3,0.9-2.2c0-0.8-0.3-1.6-0.9-2.2L41.1,35l14.1-14.1c0.6-0.6,0.9-1.3,0.9-2.2
+							 		c0-0.8-0.3-1.6-0.9-2.2L53.4,14.8z M35,35L35,35L35,35L35,35L35,35z"/>
+							 </g>
+						</svg>
+					</div>
+				</section>
+				<div class="overlay__img-next" style="cursor: default" onclick="imgNextZoom(this);">
+					<svg class="overlay__img-next-svg" style="display: none" xmlns="http://www.w3.org/2000/svg">
+						<use href="../images/svg/svg.svg#arrow"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<!-- Header -->
+
+		<header class="header">
+			<div class="grid-container">
+				<a href="../index.html">
+					<svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 445.7 288" style="enable-background:new 0 0 445.7 288;" xml:space="preserve">
+						<g fill="#f2f2f2">
+							<path d="M57.9,1.1c8.9,0,15.1,1.7,19.6,5.3c3.6,3.6,6.4,9.8,6.4,17.9v98.1H65.1V24.3c0-11.5-1.7-17.1-6.2-17.1c-2.8,0-5.3,0-7,0.8
+								v113.2H33.3V20.7c0-8.1-2.8-12.6-7-12.6c-2.8,0-4.5,0-6.2,0.8v112.4H0V7.3c8.9-4.5,17.9-7,26.8-7c6.2,0,11.5,0.8,15.1,2.8
+								C49.8,2,55.4,1.1,57.9,1.1z M112.4,79.4v41.9H92.8V7.3c8.9-4.5,17.9-7,25.7-7c8.9,0,15.9,1.7,20.4,5.3s6.2,9.8,6.2,17.9v98.1h-19.6
+								V79.7h-13.1C112.4,79.7,112.4,79.4,112.4,79.4z M112.4,70.5H125V19.9c0-8.1-2.8-12.6-7-12.6c-2.8,0-4.5,0-6.2,0.8L112.4,70.5z
+								 M187.9,55.4c-1.7-0.8-3.6-0.8-4.5-0.8h-2.8c-2.8,0-4.5,2.8-5.3,7c0,1.7-0.8,4.5-0.8,9.8v49.8h-19.6V69.6c0-8.9,2.8-15.1,8.1-18.7
+								c-2.8-0.8-4.5-1.7-8.1-3.6V0h19.6v45.6c1.7,0.8,3.6,0.8,4.5,0.8c4.5,0,7-1.7,8.1-5.3c0-1.7,0.8-5.3,0.8-10.6V1.1h19.6v31.3
+								c0,8.9-2.8,15.1-8.1,18.7c2.8,0.8,5.3,2.8,8.1,3.6v66.8h-19.6V55.4z M249.4,1.1h14.3v79.4c0,19.6,0.8,30.2,1.7,32.2
+								c0.8,2,2.8,2.8,4.5,2.8c3.6,0,5.3-1.7,6.2-6.2V1.1h14.3v99c0,15.1-7,22.4-20.4,22.4c-5.3,0-9.8-0.8-13.4-3.6
+								c-2.8,2.8-7,3.6-14.3,3.6c-9.8,0-15.9-1.7-20.4-5.3c-4.5-3.6-6.2-9.8-6.2-17.9V1.1h19.6V109c0.8,4.5,2.8,6.2,6.2,6.2
+								c3.6,0,5.3-1.7,6.2-6.2v-9.8L249.4,1.1L249.4,1.1z M344.8,121.4h-19.6c-9.8,0-15.9-1.7-20.4-5.3c-4.5-3.6-6.2-8.9-6.2-17.9V0.3
+								h41.9v8.9h-22.4v36.6H334V54h-15.9v41.9c0,7,0.8,11.5,1.7,13.4c0.8,1.7,3.6,2.8,8.1,2.8H343C343.4,113.2,344.8,121.4,344.8,121.4z
+								 M395.7,121.4h-19.6c-9.8,0-15.9-1.7-20.4-5.3c-4.5-3.6-6.2-9.8-6.2-17.9V0.3h19.6v95.3c0,7,0.8,11.5,1.7,13.4
+								c0.8,1.7,3.6,2.8,8.1,2.8H394L395.7,121.4z M445.7,121.4h-19.6c-9.8,0-15.9-1.7-20.4-5.3c-4.5-3.6-6.2-9.8-6.2-17.9V0.3h19.6v95.3
+								c0,7,0.8,11.5,1.7,13.4c0.8,1.7,3.6,2.8,8.1,2.8H444L445.7,121.4z M25.7,288H0V140.1c12.6-6.2,23.2-8.9,33.8-8.9
+								c12.6,0,20.4,2.8,25.7,7c5.3,4.5,8.1,12.6,8.1,22.4V288H42.8V162.5c0-7,0-11.5-0.8-13.4c-0.8-5.3-3.6-8.1-8.1-8.1
+								c-2.8,0-5.3,0-8.1,0.8L25.7,288z M106,233.5v54.2H80.2V139.8c11.5-6.2,23.2-8.9,33.8-8.9c12.6,0,20.4,2.8,25.7,7
+								c5.3,4.5,8.1,12.6,8.1,22.4v127.5h-25.7v-54.2L106,233.5L106,233.5z M106,222h15.9v-65.1c0-10.6-2.8-15.9-8.9-15.9
+								c-2.8,0-5.3,0-8.1,0.8L106,222z M218.4,236.3c7,4.5,9.8,12.6,9.8,24V288h-25.7v-25.7c0-7,0-11.5-0.8-13.4c-0.8-5.3-3.6-8.1-8.1-8.1
+								h-6.2V288h-25.7V140.1c12.6-6.2,24-8.9,33.8-8.9c12.6,0,20.4,2.8,25.7,7c5.3,4.5,8.1,12.6,8.1,22.4v50.9
+								C229,222.9,225.4,231,218.4,236.3z M203.3,161.3c0-6.2,0-10.6-0.8-12.6c-0.8-5.3-3.6-8.1-8.1-8.1c-2.8,0-5.3,0.8-8.1,0.8v88.4h7
+								c4.5,0,7-2.8,8.1-7c0.8-2.8,0.8-6.2,0.8-12.6L203.3,161.3z M281.6,142.6v145.1h-25.7V142.6h-18.7v-11.5h64v11.5H281.6z M370.8,288
+								h-24.9c-12.6,0-21.3-2.8-25.7-7c-5.3-4.5-8.1-12.6-8.1-22.4V131.1h55.4v11.5h-29.4v48.1h21.3v10.6h-21.3v53.4
+								c0,9.8,0.8,15.1,2.8,17.9c1.7,2.8,5.3,3.6,10.6,3.6H371V288H370.8z M402.9,288h-25.7V140.1c12.6-6.2,23.2-8.9,33.8-8.9
+								c12.6,0,20.4,2.8,25.7,7c5.3,4.5,8.1,12.6,8.1,22.4V288h-25.7V162.5c0-7,0-11.5-0.8-13.4c-0.8-5.3-3.6-8.1-8.1-8.1
+								c-2.8,0-5.3,0-8.1,0.8L402.9,288L402.9,288z"/>
+						</g>
+					</svg>
+				</a>
+				<nav>
+
+
+					<!-- Links -->
+
+					<ul class="header__links">
+						<li><span class="work">Work
+							<span>
+								<svg class="triangle" viewbox="0 0 10 5">
+									<polygon points="10,0 5,5 0,0"/>
+								</svg>
+							</span>
+								<ul class="work__list">
+									<li><a href="randstad.html">Randstad</a></li>
+									<li><a href="genassem.html">General Assembly</a></li>
+									<li><a href="hln.html">HLN</a></li>
+									<li><a href="clickmore.html">ClickMore Media</a></li>
+								</ul>
+							</span>
+						</li>
+						<li><a href="mailto:maxwellnarten@gmail.com">Email</a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/maxwell-narten-4b47bb30">LinkedIn</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Main Content -->
+
+		<main class="content">
+			<div class="grid-container">
+				<svg class="clickmore-logo"xmlns="http://www.w3.org/2000/svg">
+					<use href="../images/svg/svg.svg#clickmore"></use>
+				</svg>
+				<section class="project">
+					<h2 class="project__title">Cox Media Group radio stations 'Last Songs Played'.</h2>
+					<div class="project__img">
+						<div class="project__img--actions hln_redesign_parent">
+							<div class="project__img--actions-prev" onclick="imgPrev(this)">
+								<svg class="project__img--actions-prev-svg"  style="display: none" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+							<div class="project__img--actions-zoom" onclick="imgZoom(this)">
+								<svg viewBox="0 0 45.4 45.4" class="project__img--actions-zoom-svg">
+									<g style="fill:#f2f2f2">
+											<path d="M27.6,0C17.8,0,9.8,8,9.8,17.8c0,3.7,1.1,7.1,3.1,10L7.6,33l0,0l-7.2,7.2c-0.3,0.3-0.5,0.8-0.4,1.4c0.1,0.6,0.4,1.1,0.8,1.6
+												l1.4,1.4c0.4,0.4,1,0.7,1.6,0.8c0.6,0.1,1.1-0.1,1.4-0.4l12.5-12.5c2.8,1.9,6.3,3.1,10,3.1c9.8,0,17.8-8,17.8-17.8
+												C45.4,8,37.4,0,27.6,0z M27.6,29.4c-6.4,0-11.6-5.2-11.6-11.6S21.2,6.2,27.6,6.2s11.6,5.2,11.6,11.6S34,29.4,27.6,29.4z"/>
+									</g>
+								</svg>
+							</div>
+							<div class="project__img--actions-next" onclick="imgNext(this);">
+								<svg class="project__img--actions-next-svg" style="display: none" xmlns="http://www.w3.org/2000/svg">
+									<use href="../images/svg/svg.svg#arrow"></use>
+								</svg>
+							</div>
+						</div>
+						<img class="clickmore">
+					</div>
+					<p class="project__desc">A short contract project, I worked with Clickmore to design a page for Cox Media Group’s 70+ radio station websites. The focus was on their most visited section of the websites, the last songs played, where radio listeners visit to get information of music they have heard. I approached the project with the wireframes and header previously completed, and began with laying out the remainder of the body. This design would later be implemented across the homepage and other sections the sites. Emphasis was taken on the browse by time mechanism, providing the user the ability to drag the timing bar up to 48 hours in the past.<a href="http://www.hot1015tampabay.com/lsp/" target="_blank">An example of this design can be seen here.</a></p>
+				</section>
+
+			</div>
+		</main>
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="grid-container">
+				<a href="../index.html">
+					<svg class="monogram" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 23.4 19" style="enable-background:new 0 0 23.4 19;" xml:space="preserve">
+					<g style="fill:#f2f2f2">
+						<path d="M9.2,0c1.4,0,2.4,0.3,3.1,0.8s0.9,1.5,0.9,2.7V19h-2.9V3.8c0-1.8-0.3-2.6-0.9-2.6c-0.4,0-0.8,0-1.1,0.1V19H5.2V3.1
+							c0-1.3-0.4-2-1.1-2c-0.4,0-0.7,0-0.9,0.2V19H0V1.1C1.4,0.3,2.8,0,4.1,0c1,0,1.8,0.1,2.4,0.4C7.8,0.1,8.6,0,9.2,0z"/>
+						<path d="M18.3,19h-3.1V1.1C16.6,0.4,18,0,19.3,0c1.5,0,2.5,0.3,3.2,0.8c0.6,0.6,1,1.5,1,2.7V19h-3.1V3.8c0-0.8,0-1.4-0.1-1.6
+							c-0.1-0.7-0.5-1-1-1c-0.4,0-0.7,0-0.9,0.2V19L18.3,19z"/>
+					</g>
+					</svg>
+				</a>
+				<ul class="footer__links">
+					<li><a href="mailto:maxwellnarten@gmail.com">Email</a></li>
+					<li><a target="_blank" href="https://www.linkedin.com/in/maxwell-narten-4b47bb30">LinkedIn</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+		<script src="../js/portfolio-images.js"></script>
+		<script src="../js/clickmore.js"></script>
+
+	</body>
+</html>
