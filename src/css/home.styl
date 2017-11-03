@@ -109,12 +109,16 @@ body
 			max-width: 100%
 	&__menu
 		display: flex
-		flex-direction: column
+		flex-direction: row
 		position: absolute
-		right: 12rem
+		margin: 0 auto
 		top: 12rem
+		& .triangle
+			fill: $offwhite
+			transform: translate(2px, -3px)
+			width: 3rem
 		& li
-			margin-bottom: 4rem
+			margin: 0 4rem
 			& a
 				color: $offwhite
 				opacity: .75
@@ -129,12 +133,45 @@ body
 				opacity: .75
 				text-decoration: none
 		&__work
-			&--hide
+			&__list
+				align-items: flex-start
+				background: $navy
+				display: flex
+				opacity: 0
+				cursor: none
+				flex-direction: column
+				left: -7rem
+				padding: 3rem 7rem 4rem
+				position: absolute
+				text-align: left
+				transition: all .3s ease-in-out
+				visibility: hidden
+				width: 271px
+				z-index: 10
 				& li
-					display: none
-			&--show
-				& li
-					display: block
+					padding-top: 2rem
+					&:first-child
+						padding-top: 0
+			&:hover
+				opacity: 1
+				& .header__menu__work__list
+					align-items: flex-start
+					background: $navy
+					display: flex
+					cursor: pointer
+					flex-direction: column
+					left: -7rem
+					opacity: 1
+					padding: 3rem 7rem 4rem
+					position: absolute
+					text-align: left
+					visibility: visible
+					width: 271px
+					& li
+						padding-top: 2rem
+						&:first-child
+							padding-top: 0
+
 
 
 .grid
@@ -204,6 +241,7 @@ body
 				justify-items: center
 				max-height: 230px
 				& a
+					display: flex
 					max-width: 100%
 					padding: 4rem
 					max-height: 200px
